@@ -1,5 +1,5 @@
 .container {
-    width: 70%;
+    width: 80%;
     height: 800px;
     margin: 0 auto;
     margin-top: 2%;
@@ -14,7 +14,15 @@
     text-align: center;
     font-family: 'Permanent Marker', cursive;
     font-size: 70px;
-    margin-top: 2%;
+    margin-top: 1%;
+}
+
+#rules {
+    color: rgba(243, 248, 174, 0.795);
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+    margin-top: 10%; 
 }
 
 .container h2 {
@@ -68,12 +76,23 @@
     margin-top: 5%;
 }
 
+#startBtn {
+    background-color: rgba(243, 248, 174, 0.795);
+    width: 200px;
+    font-size: 20px;
+    color:  rgba(11, 83, 177, 0.493);
+    margin: 10% 10px 20px 40%;
+    padding: 10px 10px 10px 10px;
+    border-radius: 50px;
+    font-family: 'Permanent Marker', cursive;
+}
+
 #btn0, #btn1, #btn2, #btn3 {
     background-color: rgba(243, 248, 174, 0.795);
     width: 200px;
     font-size: 20px;
     color:  rgba(11, 83, 177, 0.493);
-    margin: 10px 30px 20px 25px;
+    margin: 10px 10px 20px 25px;
     padding: 10px 10px 10px 10px;
     border-radius: 50px;
     font-family: 'Permanent Marker', cursive;

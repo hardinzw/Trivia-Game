@@ -16,16 +16,16 @@
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 
-
-
 <body background="assets/images/lines_texture1093.jpg">
 
     <div class="container">
-
         <div id="title">
-            <h1>Trivia Extravaganza!</h1>
+            <h1>Random Trivia!</h1>
+            <p id="rules">When the quiz begins, you will have 60 seconds to answer ten randomly selected trivia questions. Your results will be shown when all questions are answered or time expires. Good Luck!</p>
         </div>
 
+        <input id="startBtn" type="button" value="start"/>
+        <div id="gameScreen" style="display: none;">
         <div id="result"></div>
 
         <div id="timer">Time Remaining: <span id="countdown"></span></div>
@@ -42,9 +42,17 @@
         <div id="progress"></div>
 
     </div>
-    
+    </div>
 
+
+    <script>
+    $("#startBtn").click(function timerRun(){
+        $("#startBtn").hide();
+        $("#rules").hide();
+        $("#gameScreen").show();
+    })
     
+    </script>
 
     <script src="assets/javascript/app.js"></script>
 

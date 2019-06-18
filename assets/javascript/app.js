@@ -1,3 +1,4 @@
+$(document).ready(); {
 //trivia questions
 var questions = [
     new Question("Who was the first baseball player to have his number retired?", ["Babe Ruth", "Yogi Bera", "Lou Gehrig", "Jackie Robinson"], "Lou Gehrig"),
@@ -81,16 +82,6 @@ function populate() {
     }
 }
 
-function showStart() {
-    var startGameHTML = "<h1>Trivia Extravaganza!</h1>";
-    startButton.addEventListener("click", getElementById("start"));
-    var element = document.getElementById("start");
-    element.innerHTML = startGameHTML;
-    document.getElementById("buttons").style.visibility = "hidden";
-    document.getElementById("progress").style.visibility = "hidden";
-    document.getElementById("question").style.visibility = "hidden";
-}
-
 function guess(id, guess) {
     var button = document.getElementById(id);
     button.onclick = function () {
@@ -119,8 +110,7 @@ function showScores() {
 }
 
 populate();
-
-
+}
 
 
 
